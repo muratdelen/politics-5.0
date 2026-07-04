@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://politics5.org/sitemap.xml
