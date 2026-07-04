@@ -18,10 +18,10 @@
   };
 
   toggle?.addEventListener('click', () => {
-    const willOpen = !nav.classList.contains('is-open');
+    const willOpen = !nav?.classList.contains('is-open');
     toggle.classList.toggle('is-open', willOpen);
     toggle.setAttribute('aria-expanded', String(willOpen));
-    nav.classList.toggle('is-open', willOpen);
+    nav?.classList.toggle('is-open', willOpen);
     document.body.classList.toggle('nav-open', willOpen);
   });
 
@@ -29,7 +29,22 @@
   window.addEventListener('scroll', setHeaderState, { passive: true });
   setHeaderState();
 
-  document.querySelector('#current-year').textContent = new Date().getFullYear();
+  const currentYear = document.querySelector('#current-year');
+  if (currentYear) currentYear.textContent = new Date().getFullYear();
+
+  const legacyRouteMap = [
+    ['Araştırma özeti', 'ilk-proje.html'],
+    ['Yöntem notu', 'seffaflik.html'],
+    ['Şeffaflık raporu', 'seffaflik.html'],
+    ['Veri koruma ilkeleri', 'veri-koruma.html'],
+    ['Etik ilkeler', 'etik-ilkeler.html']
+  ];
+
+  document.querySelectorAll('a[href="#"]').forEach((link) => {
+    const linkText = link.textContent.replace(/\s+/g, ' ').trim().toLocaleLowerCase('tr-TR');
+    const route = legacyRouteMap.find(([needle]) => linkText.includes(needle.toLocaleLowerCase('tr-TR')));
+    if (route) link.setAttribute('href', route[1]);
+  });
 
   const revealItems = document.querySelectorAll('.reveal');
   if (!reducedMotion && 'IntersectionObserver' in window) {
