@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "mode": "demo",
+    "label": "Örnek veri seti — gerçek başvuru veya sonuç verisi değildir.",
+    "period": "Örnek dönem: Temmuz–Eylül 2026",
+    "lastUpdated": "2026-07-04"
+  },
+  "kpis": [
+    { "label": "Örnek kayıt", "value": 1284, "note": "Sadece arayüz gösterimi için" },
+    { "label": "Ön değerlendirme", "value": 742, "note": "Örnek süreç statüsü" },
+    { "label": "Paydaş görüşmesine aktarılan", "value": 186, "note": "Örnek süreç statüsü" },
+    { "label": "Örnek politika notu", "value": 8, "note": "Tasarlanmış çıktı örneği" }
+  ],
+  "categories": [
+    { "label": "Beceri, eğitim ve iş eşleşmesi", "value": 327 },
+    { "label": "Bakım, erişim ve güvenli çalışma", "value": 246 },
+    { "label": "Dijital yetkinlik ve uzaktan çalışma", "value": 224 },
+    { "label": "Girişimcilik ve kooperatifçilik", "value": 198 },
+    { "label": "Diğer yerel istihdam başlıkları", "value": 289 }
+  ],
+  "process": [
+    { "label": "Kayıt altına alındı", "value": 1284, "percent": 100 },
+    { "label": "Ön değerlendirme tamamlandı", "value": 742, "percent": 58 },
+    { "label": "Paydaş görüşmesine aktarıldı", "value": 186, "percent": 14 },
+    { "label": "İzleme notu oluşturuldu", "value": 64, "percent": 5 }
+  ],
+  "updates": [
+    {
+      "date": "04 Temmuz 2026",
+      "title": "Demo etki panosu yayımlandı",
+      "description": "Bu sayfadaki veriler yalnızca gösterim ve tasarım testi amacıyla oluşturulmuştur."
+    },
+    {
+      "date": "Örnek güncelleme",
+      "title": "İhtiyaç sınıflandırma başlıkları taslak olarak oluşturuldu",
+      "description": "Gerçek sınıflandırma yapısı, saha çalışması ve paydaş görüşmeleri sonrasında yayımlanacaktır."
+    },
+    {
+      "date": "Örnek güncelleme",
+      "title": "Şeffaflık yayın standardı tanımlandı",
+      "description": "Kamuya yalnızca toplulaştırılmış, anonimleştirilmiş ve doğrulanmış göstergeler açıklanacaktır."
+    }
+  ]
+}
